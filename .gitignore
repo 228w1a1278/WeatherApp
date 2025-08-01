@@ -4,7 +4,7 @@ global.css
 babel.config.js
 metro.config.js
 tailwind.config.js
-constants
+constants/
 # dependencies
 node_modules/
 
