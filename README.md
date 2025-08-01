@@ -1,13 +1,13 @@
 # WeatherTip - React Native Weather App
 
-Welcome to **WeatherTip**, a sleek and intuitive weather application built with React Native! This app leverages the OpenWeatherAPI to provide real-time weather updates and a 5-day forecast, designed to offer a seamless user experience. As a job seeker, I’ve poured my passion for mobile development into this project, and I’m excited to share it with potential employers. Check out the live demo and code below!
+Welcome to **WeatherTip**, a sleek and intuitive weather application built with React Native! This app leverages the WeatherAPI to provide real-time weather updates and a 5-day forecast, designed to offer a seamless user experience. As a job seeker, I’ve poured my passion for mobile development into this project, and I’m excited to share it with potential employers. Check out the live demo and code below!
 
 ## About the App
 
 WeatherTip is more than just a weather app—it’s a showcase of my skills in React Native, API integration, and user interface design. The app allows users to:
 
 - **Search for Locations**: Use the search bar to find cities and countries with smart recommendations.
-- **Fetch Real-Time Data**: Enter a location to retrieve current weather details (temperature, conditions, etc.) from OpenWeatherAPI.
+- **Fetch Real-Time Data**: Enter a location to retrieve current weather details (temperature, conditions, etc.) from WeatherAPI.
 - **View Forecasts**: Get a 5-day weather prediction with daily highs and conditions.
 - **Intuitive Design**: Enjoy a clean, responsive UI optimized for both iOS and Android.
 
@@ -16,7 +16,7 @@ The app dynamically fetches and displays weather data, as seen in the screenshot
 ## Features
 
 - **Location Search with Autocomplete**: Type to see suggested cities and countries.
-- **Real-Time Weather Updates**: Powered by OpenWeatherAPI for accurate, up-to-date information.
+- **Real-Time Weather Updates**: Powered by WeatherAPI for accurate, up-to-date information.
 - **5-Day Forecast**: Plan ahead with daily weather insights.
 - **Cross-Platform**: Fully functional on both iOS and Android devices.
 
@@ -35,7 +35,7 @@ The app dynamically fetches and displays weather data, as seen in the screenshot
 ## Tech Stack
 
 - **Framework**: React Native
-- **API**: OpenWeatherAPI
+- **API**: WeatherAPI
 - **Version Control**: Git & GitHub
 - **Development Tools**: Expo, Visual Studio Code
 
