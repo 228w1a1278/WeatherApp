@@ -29,8 +29,8 @@ The app dynamically fetches and displays weather data, as seen in the screenshot
 
 ## Demo Video
 
-🎬 [Watch Demo Video](./assets/Working_demo.mp4)
-
+🎬 [Watch Demo Video](./assets/Working_demo.mp4)<br>
+**Note:** When you click the video link, you'll be redirected to the file page. Click the **"View raw"** button to download the video.
 
 ## Tech Stack
 
