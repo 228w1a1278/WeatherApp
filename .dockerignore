@@ -1,5 +1,4 @@
 node_modules
-build
 .dockerignore
 Dockerfile
 .env
@@ -10,3 +9,8 @@ babel.config.js
 metro.config.js
 tailwind.config.js
 constants/
+node_modules
+.expo
+.expo-shared
+npm-debug.log
+*.log

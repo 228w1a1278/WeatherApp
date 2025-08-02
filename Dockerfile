@@ -1,18 +1,14 @@
-# Step 1: Build the React app
-FROM node:18 AS build
+# Use Expo CLI base image
+FROM node:18
 
+# Set working directory
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
+
+# Copy everything
 COPY . .
-RUN npm run build
 
-# Step 2: Serve the build using Nginx
-FROM nginx:alpine
+# Install dependencies
+RUN npm install -g expo-cli && npm install
 
-COPY --from=build /app/build /usr/share/nginx/html
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+# Start the Expo project (development mode)
+CMD ["npx", "expo", "start", "--tunnel"]
