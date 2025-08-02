@@ -1,0 +1,12 @@
+node_modules
+build
+.dockerignore
+Dockerfile
+.env
+.git
+.gitignore
+global.css
+babel.config.js
+metro.config.js
+tailwind.config.js
+constants/
