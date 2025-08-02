@@ -26,3 +26,6 @@ export const fetchWeatherForecast = params => {
 export const fetchLocations = params => {
   return apiCall(locationsEndpoint(params));
 }
+
+
+// just nothing
