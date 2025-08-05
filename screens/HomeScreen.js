@@ -5,6 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
+  Alert,
 } from "react-native";
 import React, { useCallback, useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
@@ -218,15 +219,19 @@ export default function HomeScreen() {
     });
   };
 
-  const handleSearch = (value) => {
-    if (value.length) {
-      fetchLocations({ cityName: value }).then((data) => {
-        if (data) {
-          setLocations(data);
-        }
-      });
-    }
-  };
+ const handleSearch = (value) => {
+  if (value.length) {
+    fetchLocations({ cityName: value }).then((data) => {
+      if (data && data.length > 0) {
+        setLocations(data);
+      } else {
+        setLocations([]);
+        Alert.alert("City Not Found", "Please enter a valid city name.");
+      }
+    });
+  }
+};
+;
 
   useEffect(() => {
     fetchMyWeatherData();
